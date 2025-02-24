@@ -3,7 +3,7 @@ require "http/client"
 require "../models/completion"
 
 class Kai::Actions::Messages
-  def send(model : String,
+  def post(model : String,
             max_tokens : Int32,
             messages : Array(Kai::Models::Message),
            )

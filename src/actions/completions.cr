@@ -3,7 +3,7 @@ require "http/client"
 require "../models/completion"
 
 class Kai::Actions::Completions
-  def send(messages : Array(Kai::Models::Message),
+  def post(messages : Array(Kai::Models::Message),
            model : String = Kai::MODEL.to_s,
            frequency_penalty : Float32 = 0.0,
            # logit_bias : Hash(String, Float32) = {}, TODO Implement logit bias

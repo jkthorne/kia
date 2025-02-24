@@ -47,7 +47,7 @@ class Kai::REPL
 
       message = Kai::Models::Message.new(role: @role, content: input)
       @messages << message
-      response = Kai::Actions::Completions.new.send(@messages)
+      response = Kai::Actions::Completions.new.post(@messages)
 
       puts response.choices.last.message.content
     end

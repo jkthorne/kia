@@ -1,7 +1,7 @@
 require "http/client"
 
 class Kai::Actions::ApiKeys
-  def send
+  def index
     response = HTTP::Client.post(
       "https://api.x.ai/v1/api_keys",
     )
