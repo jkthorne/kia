@@ -1,0 +1,17 @@
+name: kai
+version: 0.1.0
+
+authors:
+  - = <=>
+
+crystal: '>= 1.15.1'
+
+license: MIT
+
+targets:
+  kai:
+   main: src/cli.cr
+
+dependencies:
+  kr:
+    github: jkthorne/kr
